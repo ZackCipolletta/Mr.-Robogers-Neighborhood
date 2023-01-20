@@ -18,7 +18,7 @@ Expected Output: [0, "Beep!", "Boop!", 3, [...], 9, "Beep!", "Beep!", "Boop!", "
 
 Test: "It should have all previous functionality unless the number contains 3, in which case it should replace the number with the phrase 'Won't you be my neighbor?'"  
 Code: beepBoop(23);
-Expected Output: [0, "Beep!", "Beep!", 'Won't you be my neighbor?', [...], 9, "Beep!", "Beep!", "Boop!", "'Won't you be my neighbor?'", [...], "Boop", "Boop!", "Boop!", "'Won't you be my neighbor?'"]
+Expected Output: [0, "Beep!", "Boop!", 'Won't you be my neighbor?', [...], 9, "Beep!", "Beep!", "Boop!", "'Won't you be my neighbor?'", [...], "Boop", "Boop!", "Boop!", "'Won't you be my neighbor?'"]
 
 Test: "It should " 
 Code: 

@@ -6,8 +6,10 @@ function beepBoop(input) {
   };
   returnArr.forEach(function(element, i){ 
     let elToString = element.toString(); 
-    if(elToString.includes(2)) {
-      returnArr.splice(i, 2, 'Boop')
+    if(elToString.includes(3)) {
+      returnArr.splice(i, 1, "Won't you be my neighbor?")
+    } else if(elToString.includes(2)) {
+      returnArr.splice(i, 1, 'Boop')
     } else if(elToString.includes(1)) { 
       returnArr.splice(i, 1, 'Beep')
     }
