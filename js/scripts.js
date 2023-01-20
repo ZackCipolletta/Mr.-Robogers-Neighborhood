@@ -22,7 +22,6 @@ function clearFunc(){
   divEl.innerText = '';
 }
 
-
 function displayToPage(el) {
   let newP = document.createElement('p');
   const divEl = document.querySelector('.results');
@@ -31,18 +30,25 @@ function displayToPage(el) {
   return  divEl;
 }
 
-
-function submitFunc(e){
-  e.preventDefault();
-
+function reverseEl() {
   const userInput = document.querySelector('input').value;
-  console.log('user input: ' + userInput);
+  let toBeDisplayed = beepBoop(userInput);
+  let newP = document.createElement('p');
+  const divEl = document.querySelector('.results');
+  const reverseEl = toBeDisplayed.reverse();
+  newP.append(reverseEl);
+  divEl.appendChild(newP);
+  return  divEl;
+}
+
+function submitFunc(){
+   const userInput = document.querySelector('input').value;
   let toBeDisplayed = beepBoop(userInput);
   displayToPage(toBeDisplayed);
 }
 
-
 window.addEventListener("load", function(){
   document.querySelector("button").addEventListener("click", submitFunc);  
   document.getElementById("clear").addEventListener("click", clearFunc);
+  document.getElementById("reverse").addEventListener("click", reverseEl);
 });
