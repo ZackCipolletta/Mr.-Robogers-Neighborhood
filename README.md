@@ -1,3 +1,35 @@
+# programming-language-suggester
+An application demonstrating knowledge of arrays, loops and branching utilizing user input
+
+#### By Zachary Cipolletta
+
+
+## Technologies used
+
+* JavaScript
+* HTML
+* CSS
+
+## Description
+
+
+## Setup/Installation Requirements
+
+* Clone repository to your desktop
+* Navigate to the top level of the directory
+* open index.html in your browser.
+
+## Known Bugs
+ *
+ 
+
+## License
+MIT
+
+Copyright (c) 1/20/2023 Zachary Cipolletta
+
+
+## TDD tests
 Describe: beepBoop()
 
 Test: "It should return an array of numbers from 0 to the user's inputted number"
