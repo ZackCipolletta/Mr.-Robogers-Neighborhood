@@ -17,14 +17,18 @@ function beepBoop(input) {
   return returnArr;
 }
 
+function clearFunc(){
+  const divEl = document.querySelector('.results');
+  divEl.innerText = '';
+}
+
+
 function displayToPage(el) {
-  let submitJustHit = document.createElement('p');
-  const userForm = document.querySelector('form');
-  submitJustHit.append(el);
-  userForm.after(submitJustHit);
-
-
-
+  let newP = document.createElement('p');
+  const divEl = document.querySelector('.results');
+  newP.append(el);
+  divEl.appendChild(newP);
+  return  divEl;
 }
 
 
@@ -35,10 +39,10 @@ function submitFunc(e){
   console.log('user input: ' + userInput);
   let toBeDisplayed = beepBoop(userInput);
   displayToPage(toBeDisplayed);
-
-};
+}
 
 
 window.addEventListener("load", function(){
-  document.querySelector("button").addEventListener("click", submitFunc);
+  document.querySelector("button").addEventListener("click", submitFunc);  
+  document.getElementById("clear").addEventListener("click", clearFunc);
 });
