@@ -14,27 +14,19 @@ function beepBoop(input) {
       returnArr.splice(i, 1, 'Beep');
     }
   });
-  return returnArr;
+  console.log(returnArr);
 }
 
-function displayToPage(el) {
-  let submitJustHit = document.createElement('p');
-  const userForm = document.querySelector('form');
-  submitJustHit.append(el);
-  userForm.after(submitJustHit);
 
 
-
-}
 
 
 function submitFunc(e){
   e.preventDefault();
 
   const userInput = document.querySelector('input').value;
-  console.log('user input: ' + userInput);
-  let toBeDisplayed = beepBoop(userInput);
-  displayToPage(toBeDisplayed);
+  console.log(userInput);
+  beepBoop(userInput);
 
 };
 
