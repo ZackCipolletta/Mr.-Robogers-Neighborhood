@@ -34,7 +34,7 @@ function displayToPage(el) {
 
 function userName() {
   let uName = document.getElementById('nameInput').value;
-  uName = uName.trim();
+  uName = uName.trim().toLowerCase().charAt(0).toUpperCase() + uName.slice(1);
   return uName;
 }
 
@@ -43,7 +43,7 @@ function reverseEl() {
   let toBeDisplayed = beepBoop(userInput, userName());
   let newP = document.createElement('p');
   const divEl = document.querySelector('.results');
-  const reverseEl = toBeDisplayed.reverse();
+  const reverseEl = toBeDisplayed.reverse().join(', ');
   newP.append(reverseEl);
   divEl.appendChild(newP);
   return  divEl;
@@ -52,7 +52,7 @@ function reverseEl() {
 function submitFunc(){
   userName();
   const userInput = document.getElementById('beepBoopInput').value;
-  let toBeDisplayed = beepBoop(userInput, userName());
+  let toBeDisplayed = beepBoop(userInput, userName()).join(', ');
   displayToPage(toBeDisplayed);
 }
 
