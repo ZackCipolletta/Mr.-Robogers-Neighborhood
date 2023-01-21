@@ -7,6 +7,13 @@ h1 {
   font-weight: 550;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
 .button {
   top:50%;
   background-color:#3232f1;
@@ -17,3 +24,5 @@ h1 {
   background-color: #1e1e9b;
   box-shadow: 0 3px #666;
   transform: translateY(2px);
+}
+
