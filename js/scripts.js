@@ -18,32 +18,31 @@ function beepBoop(input, uName) {
 }
 
 function clearFunc(){
-  const divEl = document.querySelector('.results');
-  document.getElementById('nameInput').value = '';
-  document.getElementById('beepBoopInput').value = '';
-  divEl.innerText = '';
+  const divEl = document.querySelector('.results'); // selects the element with class 'results' to the variable divEl
+  document.getElementById('nameInput').value = ''; // erases any text remaining in the name input field on the apge
+  document.getElementById('userNumberTocountTo').value = ''; // erases any text remaining in the input field asking which number to count to
+  divEl.innerText = ''; // erases any information stored in the divEl element
 }
 
-function displayToPage(el) {
-  let newP = document.createElement('p');
-  const divEl = document.querySelector('.results');
-  newP.append(el);
-  divEl.appendChild(newP);
+function displayToPage(userInput) { 
+  let newP = document.createElement('p'); // creates a new 'p' element
+  const divEl = document.querySelector('.results'); // stores the elemen with the class 'results' in a variable
+  newP.append(userInput); // appends the value of userInput to the newly created 'p' element
+  divEl.appendChild(newP); // appends the 'p' element to the element stored in the divEl variable
   return  divEl;
 }
 
-function userName() {
-  let uName = document.getElementById('nameInput').value;
-  uName = uName.trim().toLowerCase().charAt(0).toUpperCase() + uName.slice(1);
-  uName = uName.trim();
-  if(uName !== '') {
-    uName = ' ' + uName;
+function userName() { 
+  let uName = document.getElementById('nameInput').value; // takes user name from input field
+  uName = uName.trim().toLowerCase().charAt(0).toUpperCase() + uName.slice(1); //removes leading and trailing whitespace from user name, changes it to all lowercase, removes just the first letter and capitalizes it, adds the rest of the name (in lower case) back to the name.
+  if(uName !== '') { // checks if name is not just an empty string
+    uName = ' ' + uName; // adds a leading space to the user name so it can be used later when the function is called.
    }
   return uName;
 }
 
 function reverseEl() {
-  const userInput = document.getElementById('beepBoopInput').value;
+  const userInput = document.getElementById('userNumberTocountTo').value; //
   let toBeDisplayed = beepBoop(userInput, userName());
   let newP = document.createElement('p');
   const divEl = document.querySelector('.results');
@@ -55,7 +54,7 @@ function reverseEl() {
 
 function submitFunc(){
   userName();
-  const userInput = document.getElementById('beepBoopInput').value;
+  const userInput = document.getElementById('userNumberTocountTo').value;
   let toBeDisplayed = beepBoop(userInput, userName()).join(', ');
   displayToPage(toBeDisplayed);
 }
