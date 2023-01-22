@@ -20,15 +20,27 @@ h1 {
   
 }
 
-.button {
-  top:50%;
+#submit {
+  border-radius: 4px;
   background-color:#3232f1;
-  color: #fff;
+  color: yellow;
+}
+
+#clear {
+  border-radius: 4px;
+  background-color:#f13232;
+  color: blue;
+}
+
+#reverse {
+  border-radius: 4px;
+  background-color:#f1ee32;
+  color: red;
 }
 
 .button:active {
   background-color: #1e1e9b;
-  box-shadow: 0 3px #666;
+  box-shadow: 0 3px rgb(4, 201, 191);
   transform: translateY(2px);
 }
 
