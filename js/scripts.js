@@ -1,3 +1,5 @@
+//Utility Logic
+
 function beepBoop(input, uName) {
   let userNum = parseInt(input); // converts string input to a number
   let returnArr = [];
@@ -16,6 +18,9 @@ function beepBoop(input, uName) {
   });
   return returnArr;
 }
+
+
+//UI Logic
 
 function clearFunc(){
   const divEl = document.querySelector('.results'); // selects the element with class 'results' to the variable divEl
