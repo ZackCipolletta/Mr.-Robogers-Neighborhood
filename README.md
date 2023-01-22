@@ -12,6 +12,10 @@ An application demonstrating knowledge of arrays, loops and branching utilizing 
 
 ## Description
 
+This is an app that takes a users number and counts up to that number, displaying the resutlts on the page.  The app replaces all instances of a number containing a 1 with 'Beep!', unless it contains a 2 in which case the number is replaced with 'Boop!', and finally if the number contains a 3 it is replaced with the phrase 'Won't you be my neighbor?'.
+
+There is also an option to display the resluts in reverse. That is counting down from the given number to 0.  A user can also enter in their name and the app will insert it into the phrase 'Won't you be my neighbor ____?'.
+
 
 ## Setup/Installation Requirements
 
@@ -20,7 +24,8 @@ An application demonstrating knowledge of arrays, loops and branching utilizing 
 * open index.html in your browser.
 
 ## Known Bugs
- *
+
+ * No known bugs at this time.
  
 
 ## License
