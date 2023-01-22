@@ -1,5 +1,5 @@
 # programming-language-suggester
-An application demonstrating knowledge of arrays, loops and branching utilizing user input
+An application demonstrating knowledge of arrays, loops and branching utilizing user input.
 
 #### By Zachary Cipolletta
 
@@ -21,7 +21,7 @@ There is also an option to display the resluts in reverse. That is counting down
 
 * Clone repository to your desktop
 * Navigate to the top level of the directory
-* open index.html in your browser.
+* Open index.html in your browser.
 
 ## Known Bugs
 
