@@ -10,9 +10,9 @@ function beepBoop(input, uName) {
     let elToString = element.toString(); // converts element of the array to a string
     if(elToString.includes(3)) { // checks if string element contains a 3
       returnArr.splice(i, 1, "Won't you be my neighbor" + uName + "?"); // if the string does contain the specified value (in this case 3), the function will then remove 1 element at index position i and replace it with the given phrase. 
-    } else if(elToString.includes(2)) { // checks if string element contains a 2
+    } else if(elToString.includes(2)) { // checks if string element contains a 2 and if so replaces the number at the corresponding index wtih 'Boop';
       returnArr.splice(i, 1, 'Boop');
-    } else if(elToString.includes(1)) {  // checks if string element contains a 1
+    } else if(elToString.includes(1)) {  // checks if string element contains a 1 and if so replaces the number at the corresponding index wtih 'Beep';
       returnArr.splice(i, 1, 'Beep');
     }
   });
@@ -64,8 +64,12 @@ function submitFunc(){
   displayToPage(toBeDisplayed);
 }
 
-window.addEventListener("load", function(){
+function buttons(){
   document.querySelector("button").addEventListener("click", submitFunc);  
   document.getElementById("clear").addEventListener("click", clearFunc);
   document.getElementById("reverse").addEventListener("click", reverseEl);
+}
+
+window.addEventListener("load", function(){
+  buttons();
 });

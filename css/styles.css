@@ -24,18 +24,21 @@ h1 {
   border-radius: 4px;
   background-color:#3232f1;
   color: yellow;
+  border: none;
 }
 
 #clear {
   border-radius: 4px;
   background-color:#f13232;
   color: blue;
+  border: none;
 }
 
 #reverse {
   border-radius: 4px;
   background-color:#f1ee32;
   color: red;
+  border: none;
 }
 
 .button:active {
